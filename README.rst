@@ -7,4 +7,4 @@ Installation scripts used to bring a fresh installation to a python development 
 Usage
 -----
 
-wget -O - https://raw.githubusercontent.com/<username>/<project>/<branch>/<path>/<file> | bash
+wget -O - https://raw.githubusercontent.com/AndrewRPorter/pyenv/master/install.sh | bash

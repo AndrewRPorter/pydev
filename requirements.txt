@@ -1,2 +1,7 @@
 requests
 django
+pyyaml
+boto3
+gunicorn
+jinja2
+black
