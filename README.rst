@@ -1,5 +1,5 @@
 =====
-PyEnv
+PyDev
 =====
 
 Installation scripts used to bring a fresh installation to a python development environment.
