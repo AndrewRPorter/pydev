@@ -5,7 +5,7 @@ sudo apt-get update
 sudo apt-get upgrade -y
 
 # Install repository software
-sudo apt-get install -y git vim python3-pip gnome-terminal unzip
+sudo apt-get install -y git vim python3-pip gnome-terminal unzip tldr
 
 # Add atom package repository
 curl -sL https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
@@ -31,7 +31,7 @@ sudo dpkg -i ~/bat-musl_0.9.0_amd64.deb
 rm ~/bat-musl_0.9.0_amd64.deb
 
 # Install python modules
-pip3 install --user requests django pyyaml boto3 gunicorn jinja2 black tldr
+pip3 install --user requests django pyyaml boto3 gunicorn jinja2 black virtualenv
 
 # Apply aliases to bashrc file
 echo "alias cat='bat'" >> ~/.bashrc

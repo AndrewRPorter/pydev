@@ -34,3 +34,4 @@ Python Packages
 - gunicorn
 - jinaj2
 - black
+- virtualenv
