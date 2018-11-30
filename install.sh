@@ -5,7 +5,7 @@ sudo apt-get update
 sudo apt-get upgrade -y
 
 # Install repository software
-sudo apt-get install -y git vim python3-pip gnome-terminal unzip tldr
+sudo apt-get install -y git vim python3-pip gnome-terminal unzip tldr curl
 
 # Add atom package repository
 curl -sL https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
@@ -13,7 +13,6 @@ sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ 
 
 # Install atom
 sudo apt-get update
-sudo apt-get upgrade -y
 sudo apt-get install -y atom
 
 # Install atom packages

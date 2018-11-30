@@ -14,24 +14,25 @@ Usage
 Included Software
 -----------------
 
-- atom
-- pip3
-- vim
-- git
-- unzip
-- gnome-terminal
-- tldr
-- bat
-- exa
+- atom: Open source text editor with git integration
+- pip3: Tool for installing python packages
+- vim: CLI text editor
+- git: Version control
+- unzip: Easy unzipping software to manage .zip files from the CLI
+- gnome-terminal: terminal emulator for GNOME desktop enviornment
+- tldr: Simplfied MAN pages
+- bat: Modern replacement of ``cat``
+- exa: Replacement for ``ls`` written in Rust
+- curl: CLI tool for transferring data
 
 Python Packages
 ---------------
 
-- requests
-- django
-- PYYaml
-- boto3
-- gunicorn
-- jinaj2
-- black
-- virtualenv
+- requests: Python HTTP library
+- django: Python web framework
+- PYYaml: YAML parser and emitter for Python
+- boto3: Amazon Web Services (AWS) Software Development Kit (SDK) for Python
+- gunicorn: Python WSGI HTTP Server for UNIX
+- jinaj2: Template engine
+- black: Python code formatter
+- virtualenv: A tool for creating isolated 'virtual' python environments
