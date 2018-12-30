@@ -24,6 +24,7 @@ Included Software
 - bat: Modern replacement of ``cat``
 - exa: Replacement for ``ls`` written in Rust
 - curl: CLI tool for transferring data
+- cloc: Tool to count lines of code
 
 Python Packages
 ---------------
