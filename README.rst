@@ -37,3 +37,15 @@ Python Packages
 - jinaj2: Template engine
 - black: Python code formatter
 - virtualenv: A tool for creating isolated 'virtual' python environments
+
+Notes
+-----
+
+To make spacevim suitable for python development, make sure to add the python language layer
+to the spacevim configuration file: ~/.SpaceVim.d/init.toml
+
+.. code:: bash
+
+  [[layers]]
+  name = "lang#python"
+
