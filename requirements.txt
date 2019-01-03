@@ -6,3 +6,4 @@ gunicorn
 jinja2
 black
 virtualenv
+flask
