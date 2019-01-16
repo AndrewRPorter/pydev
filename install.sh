@@ -25,6 +25,12 @@ curl -LO https://github.com/BurntSushi/ripgrep/releases/download/0.10.0/ripgrep_
 sudo dpkg -i ~/ripgrep_0.10.0_amd64.deb
 rm ~/ripgrep_0.10.0_amd64.deb
 
+# Install neofetch
+git clone https://github.com/dylanaraps/neofetch ~/neofetch
+cd ~/neofetch
+sudo make install
+cd ~; rm -rf ~/neofetch
+
 # Install python modules
 pip3 install --user requests django flask pyyaml boto3 gunicorn black isort virtualenv pytest
 

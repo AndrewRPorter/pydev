@@ -33,6 +33,7 @@ Included Software
 - ripgrep: Replacement for ``grep`` written in Rust
 - curl: CLI tool for transferring data
 - cloc: Tool to count lines of code
+- neofetch: Command line system information tool written in bash
 
 Python Packages
 ---------------
