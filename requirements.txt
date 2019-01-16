@@ -7,3 +7,4 @@ jinja2
 black
 virtualenv
 flask
+isort
