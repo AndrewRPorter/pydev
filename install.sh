@@ -31,6 +31,17 @@ wget -P ~ "https://github.com/sharkdp/bat/releases/download/v0.9.0/bat-musl_0.9.
 sudo dpkg -i ~/bat-musl_0.9.0_amd64.deb
 rm ~/bat-musl_0.9.0_amd64.deb
 
+# Install ripgrep software
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/0.10.0/ripgrep_0.10.0_amd64.deb
+sudo dpkg -i ~/ripgrep_0.10.0_amd64.deb
+rm ~/ripgrep_0.10.0_amd64.deb
+
+# Install neofetch
+git clone https://github.com/dylanaraps/neofetch ~/neofetch
+cd ~/neofetch
+sudo make install
+cd ~; rm -rf ~/neofetch
+
 # Install python modules
 pip3 install --user requests flask pyyaml gunicorn jinja2 black isort virtualenv sklearn pandas numpy matplotlib
 

@@ -6,6 +6,11 @@ jinja2
 black
 isort
 virtualenv
+<<<<<<< HEAD
 sklearn
 pandas
 numpy
+=======
+flask
+isort
+>>>>>>> d72aa9e59145285a8e2b12645790bed14652edb2

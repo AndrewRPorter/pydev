@@ -11,6 +11,14 @@ Usage
 
         wget -O - https://raw.githubusercontent.com/AndrewRPorter/pyenv/master/install.sh | bash
 
+ or
+
+ .. code:: shell
+
+        git clone git@github.com:AndrewRPorter/pydev.git      
+        cd pydev
+        ./install.sh
+
 Included Software
 -----------------
 
@@ -19,8 +27,9 @@ Included Software
 - vim: CLI text editor
 - git: Version control
 - tldr: Simplfied MAN pages
-- bat: Modern replacement of ``cat``
+- bat: Modern replacement of ``cat`` written in Rust
 - exa: Replacement for ``ls`` written in Rust
+- ripgrep: Replacement for ``grep`` written in Rust
 - curl: CLI tool for transferring data
 - cloc: Tool to count lines of code
 - zsh: Bash alternative shell
