@@ -4,22 +4,21 @@
 sudo apt-get update
 
 # Install repository software
-sudo apt-get install -y git vim python3-pip gnome-terminal unzip tldr curl cloc tmux
+sudo apt-get install -y git vim python3-pip tldr curl cloc zsh
 
-# Install space-vim
-curl -sLf https://spacevim.org/install.sh | bash
+# Set zsh as default shell
+chsh -s /bin/zsh
 
-# Add atom package repository
-curl -sL https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
-sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# Install atom
-sudo apt-get update
-sudo apt-get install -y atom
+# Install kitty
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
-# Install atom packages
-apm install autocomplete-python
-apm install ftp-remote-edit
+# Install vscode
+wget -P ~ "https://az764295.vo.msecnd.net/stable/a622c65b2c713c890fcf4fbf07cf34049d5fe758/code_1.34.0-1557957934_amd64.deb"
+sudo dpkg -i ~/code_1.34.0-1557957934_amd64.deb
+rm ~/code_1.34.0-1557957934_amd64.deb
 
 # Install exa software
 wget -P ~ "https://github.com/ogham/exa/releases/download/v0.8.0/exa-linux-x86_64-0.8.0.zip"
@@ -33,15 +32,10 @@ sudo dpkg -i ~/bat-musl_0.9.0_amd64.deb
 rm ~/bat-musl_0.9.0_amd64.deb
 
 # Install python modules
-pip3 install --user requests django flask pyyaml boto3 gunicorn jinja2 black virtualenv
+pip3 install --user requests flask pyyaml gunicorn jinja2 black isort virtualenv sklearn pandas numpy matplotlib
 
-# Apply aliases to bashrc file
-echo "alias cat='bat'" >> ~/.bashrc
-echo "alias man='tldr'" >> ~/.bashrc
-echo "alias ls='/usr/bin/exa-linux-x86_64 --long'" >> ~/.bashrc
-
-# Apply Vim formatting
-echo "set background=dark" >> ~/.vimrc_back
-echo "set number" >> ~/.vimrc_back
-echo "set incsearch" >> ~/.vimrc_back
-echo "colorscheme torte" >> ~/.vimrc_back
+# Generate dotfiles
+git clone git@github.com:AndrewRPorter/dotfiles.git ~
+cd ~/dotfiles
+./install.sh
+cd ~

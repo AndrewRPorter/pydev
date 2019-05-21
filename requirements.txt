@@ -1,9 +1,11 @@
 requests
-django
+flask
 pyyaml
-boto3
 gunicorn
 jinja2
 black
+isort
 virtualenv
-flask
+sklearn
+pandas
+numpy

@@ -14,38 +14,36 @@ Usage
 Included Software
 -----------------
 
-- atom: Open source text editor with git integration
+- vscode: Open source text editor with git integration
 - pip3: Tool for installing python packages
 - vim: CLI text editor
 - git: Version control
-- unzip: Easy unzipping software to manage .zip files from the CLI
-- gnome-terminal: terminal emulator for GNOME desktop enviornment
 - tldr: Simplfied MAN pages
 - bat: Modern replacement of ``cat``
 - exa: Replacement for ``ls`` written in Rust
 - curl: CLI tool for transferring data
 - cloc: Tool to count lines of code
+- zsh: Bash alternative shell
 
 Python Packages
 ---------------
 
 - requests: Python HTTP library
-- django: Python web framework
+- flase: micro web framework for python
 - PYYaml: YAML parser and emitter for Python
-- boto3: Amazon Web Services (AWS) Software Development Kit (SDK) for Python
 - gunicorn: Python WSGI HTTP Server for UNIX
 - jinaj2: Template engine
-- black: Python code formatter
+- black: General python linter
+- isort: Package import linter
 - virtualenv: A tool for creating isolated 'virtual' python environments
+- sklearn: Machine learning library for python
+- pandas: Data manipulation and analysis
+- numpy: Data manipulation and analysis
+- matplotlib: Graphing tools
 
 Notes
 -----
 
-To make spacevim suitable for python development, make sure to add the python language layer
-to the spacevim configuration file: ~/.SpaceVim.d/init.toml
+You may need to restart your computer to see ZSH as your default shell.
 
-.. code:: bash
-
-  [[layers]]
-  name = "lang#python"
-
+`echo $SHELL` will output the shell environment variable that is currently in use and is not reset until reboot.
